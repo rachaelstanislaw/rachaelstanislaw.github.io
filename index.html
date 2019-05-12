@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Treasure Hunt! </title>
+        <link src="shortcut icon" href="data:image/x-icon;base64,AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAQgaRALi2tAAKCQgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMwABAAAAAAAzMBEAAAAAAAMxEAAAAAAAABEgAAAAAAAAEiIAAAAAAAEQIiAAAAAAAQACIgAAAAAAAAAiIAAAAAAAAAIgAAAAAAAAACIAAAAAAAAAIgAAAAAAAAACIAAAAAAAAAIgAAAAAAAAACAAAAAAAAAAIAAAAAAAAAAAAAA7/wAAE/8AAIf/AADH/wAAw/8AAJH/AAC4/wAA/H8AAP5/AAD/PwAA/z8AAP+fAAD/nwAA/98AAP/fAAD//wAA" rel="icon" type="image/x-icon" />
+        <link rel="stylesheet" href="treasurehunt.css">
+        <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    </head>
+    <body>
+
+        <h1>Treasure Hunt!</h1>
+
+        <img src="http://www.stickpng.com/assets/images/585983924f6ae202fedf28b3.png" height="125px" id=dirt>
+
+        <hr>
+
+        <h3>Mr. Peg Leg says,</h3>
+        <h3 id=quote>"Try yer luck to find the treasure!"</h3>
+
+        <div>
+        <img src="https://live.staticflickr.com/6/75859252_9b83fd1554_b.jpg" alt="cat photo" height="200px" id=cat>
+        </div>
+
+        <br>
+        <hr>
+
+        <h4 class="miniHeads">Here are the Rules...</h4>
+
+    <div>
+    <ul>
+        <li>Rule 1: Click a Spot on the Map Below</li>
+        <li>Rule 2: If You Find the Treasure You Win!</li>
+        <li>Rule 3: If You Find a Bomb You Lose! **womp womp**</li>
+    </ul>
+    </div>
+
+    <p class="miniHeads"><strong>Good luck!</strong>
+    </p>
+
+    <!-- <div id=gameboard> -->
+    <table>
+        <tr>
+            <td id=0 onclick="treasure(0)">?</td>
+            <td id=1 onclick="treasure(1)">?</td>
+            <td id=2 onclick="treasure(2)">?</td>
+            <td id=3 onclick="treasure(3)">?</td>
+            <td id=4 onclick="treasure(4)">?</td>
+        </tr>
+        <tr>
+            <td id=5 onclick="treasure(5)">?</td>
+            <td id=6 onclick="treasure(6)">?</td>
+            <td id=7 onclick="treasure(7)">?</td>
+            <td id=8 onclick="treasure(8)">?</td>
+            <td id=9 onclick="treasure(9)">?</td>
+        </tr>
+        <tr>
+            <td id=10 onclick="treasure(10)">?</td>
+            <td id=11 onclick="treasure(11)">?</td>
+            <td id=12 onclick="treasure(12)">?</td>
+            <td id=13 onclick="treasure(13)">?</td>
+            <td id=14 onclick="treasure(14)">?</td>
+        </tr>
+        <tr>
+            <td id=15 onclick="treasure(15)">?</td>
+            <td id=16 onclick="treasure(16)">?</td>
+            <td id=17 onclick="treasure(17)">?</td>
+            <td id=18 onclick="treasure(18)">?</td>
+            <td id=19 onclick="treasure(19)">?</td>
+        </tr>
+        <tr>
+            <td id=20 onclick="treasure(20)">?</td>
+            <td id=21 onclick="treasure(21)">?</td>
+            <td id=22 onclick="treasure(22)">?</td>
+            <td id=23 onclick="treasure(23)">?</td>
+            <td id=24 onclick="treasure(24)">?</td>
+        </tr>
+    </table>
+<!-- </div> -->
+
+    <br>
+
+    <h2><strong>Turns Remaining:</strong>
+        <a id="counter">20</a>
+    </h2>
+
+    <div id=test>
+    <button id=button type="button" onclick="location.reload()">Restart Game</button>
+    </div>
+
+    <br>
+    <hr>
+
+    <br>
+
+    <footer>
+        &copy Jumpstart | May | <a id=wiki href="https://en.wikipedia.org/wiki/Cat">Wikipedia</a>
+    </footer>
+    <script type="text/javascript" src="treasurehunt.js"></script>
+    </body>
+</html>
