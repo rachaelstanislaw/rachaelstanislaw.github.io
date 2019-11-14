@@ -1,101 +1,127 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>Treasure Hunt! </title>
-        <link src="shortcut icon" href="data:image/x-icon;base64,AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAQgaRALi2tAAKCQgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMwABAAAAAAAzMBEAAAAAAAMxEAAAAAAAABEgAAAAAAAAEiIAAAAAAAEQIiAAAAAAAQACIgAAAAAAAAAiIAAAAAAAAAIgAAAAAAAAACIAAAAAAAAAIgAAAAAAAAACIAAAAAAAAAIgAAAAAAAAACAAAAAAAAAAIAAAAAAAAAAAAAA7/wAAE/8AAIf/AADH/wAAw/8AAJH/AAC4/wAA/H8AAP5/AAD/PwAA/z8AAP+fAAD/nwAA/98AAP/fAAD//wAA" rel="icon" type="image/x-icon" />
-        <link rel="stylesheet" href="treasurehunt.css">
-        <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
-    </head>
-    <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Rachael Stanislaw - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Raleway&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="images/code.png">
 
-        <h1>Treasure Hunt!</h1>
-
-        <img src="http://www.stickpng.com/assets/images/585983924f6ae202fedf28b3.png" height="125px" id=dirt>
-
-        <hr>
-
-        <h3>Mr. Peg Leg says,</h3>
-        <h3 id=quote>"Try yer luck to find the treasure!"</h3>
-
+</head>
+<body id="top">
+   <header>
+        <div class="parallax p1">
+            <h1>Rachael Stanislaw</h1>
+            <h2>Full-Stack Web Developer</h2>
+        </div>
+        <i id="menu" class="fas fa-bars" onClick="menuFunc()"></i>
+        <nav id="mainNav" class="hidden">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#ed">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        </header>
+    <section class="about" id="about">
+        <h1>Who am I</h1>
+        <p>I am a full-stack developer from Southern California with a passion for eloquent code and creative problem-solving. I am a strong communicator and resourceful team member. Backed with 6+ years of professional management experience focused around operations and customer service.
+        </p>
+        <a href="rachael-stanislaw-resume.pdf.zip" download="Rachael-Stanislaw-Resume".><h3>Download my resume</h3><i class="fas fa-file-download"></i></a>
+    </section>
+    <div class="parallax p2" id="skills">
+        <h1>Skill Stack</h1>
+    </div>
+    <section class="skills">
+        <h2>Languages:</h2>
+        <div class="langPics">
+            <img src="images/HTML5.png" alt="HTML5">
+            <img src="images/HTML5-2.png" alt="CSS3">
+            <img src="images/JavaScript-logo-square.png" alt="JavaScript">
+            <img src="images/ruby-logo.png" alt="Ruby">
+            <img src="images/php.png" alt="PHP">
+        </div>
+        <h2>Libraries, Frameworks, and Testing:</h2>
+        <div class="langPics">
+            <img src="images/react2.png" alt="React">
+            <img src="images/rails-logo.png" alt="Rails">
+            <img src="images/bootstrap.png" alt="Bootstrap">
+            <img src="images/PostgreSQL.png" alt="PostgrsSQL">
+            <img src="images/jest-logo.png" alt="Jest">
+            <img src="images/rspec-logo.png" alt="Rspec">
+            <img src="images/postman.png" alt="Postman">
+        </div>
+        <h2>Tools:</h2>
+        <div class="langPics">
+            <img src="images/atom.png" alt="Atom">
+            <img src="images/activerecord.png" alt="ActiveRecord">
+            <img src="images/aws-logo2.png" alt="AWS">
+            <img src="images/git.png" alt="Git">
+            <img src="images/githublogo.png" alt="Github">
+        </div>
+    </section>
+    <div class="parallax p3" id="projects">
+        <h1>Projects</h1>
+    </div>
+    <section class="projects">
         <div>
-        <img src="https://live.staticflickr.com/6/75859252_9b83fd1554_b.jpg" alt="cat photo" height="200px" id=cat>
+          <h2>Glass Track</h2>
+          <img src="images/glasstrack.png" alt="Glass Track">
+          <h3>Ruby on Rails | React | Bootstrap</h3>
+          <button><a href="https://github.com/ugly-and-proud/glasstrack" target="_blank">Code</a></button>
+        </div>
+        <div>
+            <h2>Battleship!</h2>
+            <img src="images/battleship.png" alt="Battleship">
+            <h3>React</h3>
+            <button><a href="https://github.com/rachaelstanislaw/realBattleship" target="_blank">Code</a></button>
+        </div>
+        <div>
+            <h2>Pig Latin Translator</h2>
+            <img src="images/piglatin.png" alt="Pig Latin Translator">
+            <h3>HTML | CSS | JavaScript</h3>
+            <button><a href="https://github.com/learn-academy-2019-charlie/pig-latin-with-testing-brenda-rachael-chris" target="_blank">Code</a></button>
         </div>
 
-        <br>
-        <hr>
-
-        <h4 class="miniHeads">Here are the Rules...</h4>
-
-    <div>
-    <ul>
-        <li>Rule 1: Click a Spot on the Map Below</li>
-        <li>Rule 2: If You Find the Treasure You Win!</li>
-        <li>Rule 3: If You Find a Bomb You Lose! **womp womp**</li>
-    </ul>
+    </section>
+    <div class="parallax p4" id="ed">
+        <h1>Experience</h1>
     </div>
-
-    <p class="miniHeads"><strong>Good luck!</strong>
-    </p>
-
-    <!-- <div id=gameboard> -->
-    <table>
-        <tr>
-            <td id=0 onclick="treasure(0)">?</td>
-            <td id=1 onclick="treasure(1)">?</td>
-            <td id=2 onclick="treasure(2)">?</td>
-            <td id=3 onclick="treasure(3)">?</td>
-            <td id=4 onclick="treasure(4)">?</td>
-        </tr>
-        <tr>
-            <td id=5 onclick="treasure(5)">?</td>
-            <td id=6 onclick="treasure(6)">?</td>
-            <td id=7 onclick="treasure(7)">?</td>
-            <td id=8 onclick="treasure(8)">?</td>
-            <td id=9 onclick="treasure(9)">?</td>
-        </tr>
-        <tr>
-            <td id=10 onclick="treasure(10)">?</td>
-            <td id=11 onclick="treasure(11)">?</td>
-            <td id=12 onclick="treasure(12)">?</td>
-            <td id=13 onclick="treasure(13)">?</td>
-            <td id=14 onclick="treasure(14)">?</td>
-        </tr>
-        <tr>
-            <td id=15 onclick="treasure(15)">?</td>
-            <td id=16 onclick="treasure(16)">?</td>
-            <td id=17 onclick="treasure(17)">?</td>
-            <td id=18 onclick="treasure(18)">?</td>
-            <td id=19 onclick="treasure(19)">?</td>
-        </tr>
-        <tr>
-            <td id=20 onclick="treasure(20)">?</td>
-            <td id=21 onclick="treasure(21)">?</td>
-            <td id=22 onclick="treasure(22)">?</td>
-            <td id=23 onclick="treasure(23)">?</td>
-            <td id=24 onclick="treasure(24)">?</td>
-        </tr>
-    </table>
-<!-- </div> -->
-
-    <br>
-
-    <h2><strong>Turns Remaining:</strong>
-        <a id="counter">10</a>
-    </h2>
-
-    <div id=test>
-    <button id=button type="button" onclick="location.reload()">Restart Game</button>
+    <section class="ed">
+      <div>
+        <h2>Software Development Intern, The 5th Ingredient</h2>
+        <p>Develop features for a full-stack PHP web application.</p>
+      </div>
+        <div>
+            <h2>Software Development Intern, Q-Centrix</h2>
+            <p>Built out specs testing hundreds of lines of code for a variety of features including: import and export functionality, form edges, calculations, and extractions of data for a Ruby on Rails tool. Attended weekly Q-niversity lessons on Computer Science and Dev Ops. Gained experience with Agile processes, bi-weekly sprint planning, peer review, and story grooming.</p>
+        </div>
+        <div>
+            <h2>LEARN Academy</h2>
+            <p>Completed 480 + hours of direct coding experience in an intensive  web development bootcamp. Gained proficiency in building JavaScript, Ruby, and React applications. Practiced  test-driven development to produce full-stack Ruby on Rails applications complete with databases. As an alumni, I am the lead instructor for a weekend-long fundamental HTML, CSS, and JavaScript course for groups of ~10+ prospective and future LEARN students.</p>
+        </div>
+    </section>
+    <div class="parallax p5" id="contact">
+        <h1>Contact</h1>
     </div>
+    <section class="contact">
+        <div>
+            <button><a href="https://linkedin.com/in/rachaelstanislaw" target="_blank">Linkedin</a></button>
+            <button><a href="https://github.com/rachaelstanislaw" target="_blank">Github</a></button>
+        </div>
+    </section>
+    <a href="#top"><i class="fas fa-arrow-circle-up" id="scrollToTopButton">
+    </i></a>
 
-    <br>
-    <hr>
-
-    <br>
-
-    <footer>
-        &copy Jumpstart | May | <a id=wiki href="https://en.wikipedia.org/wiki/Cat">Wikipedia</a>
+    <footer class="parallax">
+        <p>&copy;2019 Rachael Stanislaw</p>
     </footer>
-    <script type="text/javascript" src="treasurehunt.js"></script>
-    </body>
+    <script src="script.js"></script>
+</body>
 </html>
